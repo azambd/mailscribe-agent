@@ -87,7 +87,7 @@ Anthropic SDK, PyYAML, and python-dotenv, so dry-run never loads any
 Google libraries.
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/azambd/mailscribe-agent.git
 cd mailscribe-agent
 python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
