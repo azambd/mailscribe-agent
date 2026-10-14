@@ -1,0 +1,4 @@
+# Core dependencies: everything needed for `python main.py --mode dry-run`
+anthropic>=0.40.0
+pyyaml>=6.0
+python-dotenv>=1.0.0

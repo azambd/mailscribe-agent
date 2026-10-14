@@ -1,0 +1,47 @@
+[
+  {
+    "message_id": "sample-001",
+    "sender_name": "Dana Whitfield",
+    "sender_email": "dana@northbridge-supplies.com",
+    "subject": "Invoice #4471 — Net 30",
+    "date_iso": "2026-09-03T14:12:00+00:00",
+    "body_text": "Hi team, attached is invoice #4471 for the September office supplies order, total $1,240.00, due within 30 days of receipt (October 3rd). Let me know if you need anything else on our end.",
+    "has_attachment": true
+  },
+  {
+    "message_id": "sample-002",
+    "sender_name": "Marcus Ito",
+    "sender_email": "marcus.ito@clientmail.io",
+    "subject": "Login issue since yesterday",
+    "date_iso": "2026-09-04T09:47:00+00:00",
+    "body_text": "I can't log into my dashboard since yesterday afternoon. Getting a 'session expired' error every time even right after resetting my password. Using Chrome on a Mac. This is blocking my team from pulling this week's reports, would appreciate a quick look.",
+    "has_attachment": false
+  },
+  {
+    "message_id": "sample-003",
+    "sender_name": "Priya Nandakumar",
+    "sender_email": "priya@brightlanegrowth.com",
+    "subject": "Quick intro — potential fit for Q4 work",
+    "date_iso": "2026-09-05T18:30:00+00:00",
+    "body_text": "Hey, came across your profile and think there could be a good fit for some upcoming automation work on our end. We're looking to kick something off before end of Q4. Would you have 20 minutes next week to chat?",
+    "has_attachment": false
+  },
+  {
+    "message_id": "sample-004",
+    "sender_name": "Weekly Ops Digest",
+    "sender_email": "digest@internal-tools.example.com",
+    "subject": "Your weekly summary is ready",
+    "date_iso": "2026-09-06T07:00:00+00:00",
+    "body_text": "Here's what happened this week across your workspace: 14 tasks completed, 3 overdue, 2 new team members joined. No action needed, this is just your regular summary.",
+    "has_attachment": false
+  },
+  {
+    "message_id": "sample-005",
+    "sender_name": "Sofia Reyes",
+    "sender_email": "sofia.reyes@eventpartners.org",
+    "subject": "Can we move Thursday's call to Friday?",
+    "date_iso": "2026-09-07T11:05:00+00:00",
+    "body_text": "Something came up on my end for Thursday at 2pm. Any chance we could push to Friday morning instead, say 10am your time? Let me know what works and I'll send a new invite.",
+    "has_attachment": false
+  }
+]

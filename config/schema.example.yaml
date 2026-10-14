@@ -1,0 +1,42 @@
+# Mail-to-Sheet AI Agent — configuration
+#
+# Everything below is what makes this agent generic. Change `fields` to
+# extract whatever matters for YOUR use case — support tickets, invoices,
+# leads, event RSVPs — without touching any code.
+
+fields:
+  - name: message_id
+    description: "The unique email identifier — this is injected automatically after extraction, not read from the email content. Keep this as the first field and matching sync.key_field below; don't remove it."
+  - name: sender_name
+    description: "Name of the person or organization who sent the email"
+  - name: sender_email
+    description: "Email address of the sender"
+  - name: date_received
+    description: "Date and time the email was received"
+  - name: subject
+    description: "Subject line of the email"
+  - name: category
+    description: "Best-fit category or type of request/content described in the email"
+  - name: key_details
+    description: "The most important facts, numbers, names, or requests found in the email body"
+  - name: deadline
+    description: "Any date or deadline explicitly mentioned in the email, or 'None' if none is mentioned"
+  - name: summary
+    description: "One-sentence plain-language summary of what the email is about"
+  - name: has_attachment
+    description: "yes or no — whether the email includes an attachment"
+
+sync:
+  spreadsheet_id: "YOUR_GOOGLE_SHEET_ID"     # the long ID in your Sheet's URL
+  worksheet_name: "Extracted Emails"          # tab name within that spreadsheet
+  key_field: "message_id"                     # must match a field name above — used for update-vs-append
+
+schedule:
+  interval_minutes: 60                        # how often the agent runs in --mode schedule
+
+source:
+  type: "gmail"                                # "gmail" or "imap"
+  # --- only needed if type is "imap" ---
+  imap_host: "outlook.office365.com"
+  imap_port: 993
+  imap_username: "you@example.com"
